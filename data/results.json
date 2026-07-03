@@ -1,0 +1,648 @@
+{
+  "harness": {
+    "repo": "e2p-ai/forge",
+    "sha": "b2b79dfb243f2b9d611d2e533f85d8e315f157b9",
+    "short_sha": "b2b79dfb243f",
+    "commit_url": "https://github.com/e2p-ai/forge/commit/b2b79dfb243f2b9d611d2e533f85d8e315f157b9"
+  },
+  "suite": {
+    "expected_tasks": 27,
+    "task_ids": [
+      "01-bug-fix",
+      "02-refactor",
+      "03-new-feature",
+      "04-multi-file-edit",
+      "05-repo-qa",
+      "06-test-writing",
+      "07-perf-opt",
+      "08-docs-gen",
+      "09-error-explain",
+      "10-codebase-search",
+      "11-type-error-chain",
+      "12-trait-impl",
+      "13-borrow-checker-fix",
+      "14-multi-file-refactor",
+      "15-build-break-verify-fix",
+      "16-enum-exhaustive-invariant",
+      "17-logic-bugfix",
+      "18-feature-to-spec",
+      "19-multi-file-package",
+      "20-edge-case-handling",
+      "21-perf-opt",
+      "22-exception-semantics",
+      "23-async-bugfix",
+      "24-feature-to-spec",
+      "25-multi-file-module",
+      "26-input-validation",
+      "27-perf-refactor"
+    ]
+  },
+  "champion": "forge-kimi-k27",
+  "agents": [
+    {
+      "agent": "forge-kimi-k27",
+      "tasks": 27,
+      "passes": 27,
+      "pass_pct": 100.0,
+      "cost_per_success": 0.015052,
+      "cost_per_task": 0.015052,
+      "total_cost": 0.406415,
+      "mean_wall": 35.3,
+      "p95_wall": 68.5,
+      "fresh_tokens": 249893,
+      "cache_read_pct": 77.0,
+      "models": [
+        "forge-voice"
+      ],
+      "last_run": "2026-06-30T16:39:48Z"
+    },
+    {
+      "agent": "forge-glm52",
+      "tasks": 27,
+      "passes": 26,
+      "pass_pct": 96.3,
+      "cost_per_success": 0.031245,
+      "cost_per_task": 0.030087,
+      "total_cost": 0.812359,
+      "mean_wall": 73.5,
+      "p95_wall": 163.4,
+      "fresh_tokens": 706601,
+      "cache_read_pct": 39.0,
+      "models": [
+        "forge-voice"
+      ],
+      "last_run": "2026-06-30T16:23:55Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "01-bug-fix",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.012316,
+          "tokens_fresh": 8677,
+          "wall": 37,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:24:32Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.020252,
+          "tokens_fresh": 17459,
+          "wall": 71,
+          "model": "forge-voice",
+          "ts": "2026-06-30T15:52:00Z"
+        }
+      }
+    },
+    {
+      "id": "02-refactor",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.014572,
+          "tokens_fresh": 9001,
+          "wall": 40,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:25:12Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.038701,
+          "tokens_fresh": 36241,
+          "wall": 99,
+          "model": "forge-voice",
+          "ts": "2026-06-30T15:53:39Z"
+        }
+      }
+    },
+    {
+      "id": "03-new-feature",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.015164,
+          "tokens_fresh": 8992,
+          "wall": 42,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:25:54Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.01435,
+          "tokens_fresh": 9196,
+          "wall": 80,
+          "model": "forge-voice",
+          "ts": "2026-06-30T15:54:59Z"
+        }
+      }
+    },
+    {
+      "id": "04-multi-file-edit",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.023363,
+          "tokens_fresh": 10376,
+          "wall": 79,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:27:13Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.023236,
+          "tokens_fresh": 17825,
+          "wall": 106,
+          "model": "forge-voice",
+          "ts": "2026-06-30T15:56:45Z"
+        }
+      }
+    },
+    {
+      "id": "05-repo-qa",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.009378,
+          "tokens_fresh": 8020,
+          "wall": 9,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:27:22Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.017791,
+          "tokens_fresh": 17646,
+          "wall": 30,
+          "model": "forge-voice",
+          "ts": "2026-06-30T15:57:15Z"
+        }
+      }
+    },
+    {
+      "id": "06-test-writing",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.013269,
+          "tokens_fresh": 8523,
+          "wall": 37,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:27:59Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.023275,
+          "tokens_fresh": 18177,
+          "wall": 71,
+          "model": "forge-voice",
+          "ts": "2026-06-30T15:58:26Z"
+        }
+      }
+    },
+    {
+      "id": "07-perf-opt",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.014261,
+          "tokens_fresh": 8735,
+          "wall": 40,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:28:39Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.03011,
+          "tokens_fresh": 27252,
+          "wall": 33,
+          "model": "forge-voice",
+          "ts": "2026-06-30T15:58:59Z"
+        }
+      }
+    },
+    {
+      "id": "08-docs-gen",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.016522,
+          "tokens_fresh": 9149,
+          "wall": 44,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:29:23Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.04914,
+          "tokens_fresh": 46740,
+          "wall": 92,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:00:31Z"
+        }
+      }
+    },
+    {
+      "id": "09-error-explain",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.013187,
+          "tokens_fresh": 8039,
+          "wall": 19,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:29:42Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.010989,
+          "tokens_fresh": 9091,
+          "wall": 28,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:00:59Z"
+        }
+      }
+    },
+    {
+      "id": "10-codebase-search",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.009232,
+          "tokens_fresh": 7798,
+          "wall": 9,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:29:51Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.017846,
+          "tokens_fresh": 17476,
+          "wall": 12,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:01:11Z"
+        }
+      }
+    },
+    {
+      "id": "11-type-error-chain",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.013256,
+          "tokens_fresh": 8828,
+          "wall": 39,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:30:30Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.039736,
+          "tokens_fresh": 35896,
+          "wall": 105,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:02:56Z"
+        }
+      }
+    },
+    {
+      "id": "12-trait-impl",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.013215,
+          "tokens_fresh": 9233,
+          "wall": 36,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:31:06Z"
+        },
+        "forge-glm52": {
+          "pass": false,
+          "cost": 0.008924,
+          "tokens_fresh": 8789,
+          "wall": 37,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:03:33Z"
+        }
+      }
+    },
+    {
+      "id": "13-borrow-checker-fix",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.013611,
+          "tokens_fresh": 9080,
+          "wall": 43,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:31:49Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.03705,
+          "tokens_fresh": 35780,
+          "wall": 58,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:04:31Z"
+        }
+      }
+    },
+    {
+      "id": "14-multi-file-refactor",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.013941,
+          "tokens_fresh": 9568,
+          "wall": 82,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:33:11Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.026105,
+          "tokens_fresh": 18477,
+          "wall": 81,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:05:53Z"
+        }
+      }
+    },
+    {
+      "id": "15-build-break-verify-fix",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.013894,
+          "tokens_fresh": 9282,
+          "wall": 40,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:33:51Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.029301,
+          "tokens_fresh": 26639,
+          "wall": 41,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:06:34Z"
+        }
+      }
+    },
+    {
+      "id": "16-enum-exhaustive-invariant",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.013698,
+          "tokens_fresh": 9032,
+          "wall": 41,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:34:32Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.030017,
+          "tokens_fresh": 28081,
+          "wall": 41,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:07:15Z"
+        }
+      }
+    },
+    {
+      "id": "17-logic-bugfix",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.011512,
+          "tokens_fresh": 8139,
+          "wall": 19,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:34:51Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.023644,
+          "tokens_fresh": 18457,
+          "wall": 31,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:07:46Z"
+        }
+      }
+    },
+    {
+      "id": "18-feature-to-spec",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.0181,
+          "tokens_fresh": 9913,
+          "wall": 28,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:35:19Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.047867,
+          "tokens_fresh": 46277,
+          "wall": 57,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:08:43Z"
+        }
+      }
+    },
+    {
+      "id": "19-multi-file-package",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.021936,
+          "tokens_fresh": 11647,
+          "wall": 36,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:35:55Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.048566,
+          "tokens_fresh": 46466,
+          "wall": 90,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:10:13Z"
+        }
+      }
+    },
+    {
+      "id": "20-edge-case-handling",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.015134,
+          "tokens_fresh": 8998,
+          "wall": 24,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:36:19Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.016493,
+          "tokens_fresh": 9546,
+          "wall": 93,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:11:46Z"
+        }
+      }
+    },
+    {
+      "id": "21-perf-opt",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.014334,
+          "tokens_fresh": 9171,
+          "wall": 19,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:36:38Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.01453,
+          "tokens_fresh": 9356,
+          "wall": 272,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:16:18Z"
+        }
+      }
+    },
+    {
+      "id": "22-exception-semantics",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.01656,
+          "tokens_fresh": 9407,
+          "wall": 33,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:37:11Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.040993,
+          "tokens_fresh": 37758,
+          "wall": 64,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:17:22Z"
+        }
+      }
+    },
+    {
+      "id": "23-async-bugfix",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.01632,
+          "tokens_fresh": 9407,
+          "wall": 28,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:37:39Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.088838,
+          "tokens_fresh": 85593,
+          "wall": 188,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:20:30Z"
+        }
+      }
+    },
+    {
+      "id": "24-feature-to-spec",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.015255,
+          "tokens_fresh": 9663,
+          "wall": 22,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:38:02Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.040662,
+          "tokens_fresh": 37734,
+          "wall": 104,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:22:15Z"
+        }
+      }
+    },
+    {
+      "id": "25-multi-file-module",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.01609,
+          "tokens_fresh": 9365,
+          "wall": 39,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:38:41Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.022798,
+          "tokens_fresh": 11277,
+          "wall": 59,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:23:14Z"
+        }
+      }
+    },
+    {
+      "id": "26-input-validation",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.020867,
+          "tokens_fresh": 11368,
+          "wall": 35,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:39:16Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.016728,
+          "tokens_fresh": 10967,
+          "wall": 19,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:23:33Z"
+        }
+      }
+    },
+    {
+      "id": "27-perf-refactor",
+      "cells": {
+        "forge-kimi-k27": {
+          "pass": true,
+          "cost": 0.017428,
+          "tokens_fresh": 10482,
+          "wall": 32,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:39:48Z"
+        },
+        "forge-glm52": {
+          "pass": true,
+          "cost": 0.034417,
+          "tokens_fresh": 22405,
+          "wall": 22,
+          "model": "forge-voice",
+          "ts": "2026-06-30T16:23:55Z"
+        }
+      }
+    }
+  ],
+  "generated": "2026-07-03T16:15:47Z",
+  "sig": "9c5581e36e228256b2318b8fab592408949fcd95dc4c4edcae19b4f31371d4e9"
+}
